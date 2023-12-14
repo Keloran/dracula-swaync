@@ -1,0 +1,211 @@
+/*
+ * vim: ft=less 
+ */
+
+@define-color border-color rgb(40, 42, 54);
+@define-color border-color2 rgb(189, 147, 249);
+@define-color bg rgb(40, 42, 54);
+@define-color bg-hover rgb(68, 71, 90);
+@define-color bg-focus rgb(98, 114, 164);
+@define-color bg-selected rgb(40, 42, 54);
+@define-color bg-red rgba(255, 85, 85, 0.4);
+@define-color bg-red-bright rgba(255, 85, 85, 1);
+
+.notification-row {
+  outline: none;
+  padding: 0px;
+}
+.notification-row:focus,
+.notification-row:hover {
+  background: none;
+  padding: 0px;
+}
+
+.notification {
+  border-radius: 0px;
+  margin: 6px 8px;
+  box-shadow: none;
+/*  box-shadow: 0px 2px 4px 2px @bg-hover;*/
+  padding: 0px;
+}
+
+.notification-content {
+  background: transparent;
+  /*padding: 6px;*/
+  border-radius: 0px;
+}
+
+.close-button {
+  background: @border-color;
+  color: white;
+  text-shadow: none;
+  padding: 0px;
+  box-shadow: 0px 2px 4px 2px @bg-hover;
+  border-radius: 100%;
+  min-width: 12px;
+  min-height: 14px;
+  margin-right: 12px;
+}
+.close-button:hover {
+  background: @border-color2;
+}
+.time {
+  margin-right: 5px;
+}
+/*.close-button:hover {
+  background: @bg-red-bright;
+  transition: all 0.15s ease-in-out;
+}*/
+
+.notification-default-action,
+.notification-action {
+  /*padding: 4px;*/
+  margin: 0;
+  box-shadow: none;
+  background: @bg;
+  border-radius: 0px;
+/*  background-color: @border-color2;*/
+  /*border: 1px solid @border-color;*/
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  background: @border-color2;
+}
+
+/*.notification-default-action {
+  border-radius: 10px;
+}*/
+
+/* When alternative actions are visible */
+.notification-default-action:not(:only-child) {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.notification-action {
+  border-radius: 0px;
+  border-top: none;
+  border-right: none;
+}
+
+/* add bottom border radius to eliminate clipping */
+/*.notification-action:first-child {
+  border-bottom-left-radius: 10px;
+}*/
+.notification-action:last-child {
+  /*border-bottom-right-radius: 10px;*/
+  border-right: 1px solid @border-color;
+}
+
+.image {
+}
+
+.body-image {
+  margin-top: 6px;
+  background-color: white;
+  /*border-radius: 10px;*/
+}
+
+.summary {
+  color: white;
+  text-shadow: none;
+}
+
+.time {
+  color: white;
+  text-shadow: none;
+}
+
+.body {
+  background: transparent;
+  color: white;
+  text-shadow: none;
+}
+
+.top-action-title {
+  color: white;
+  text-shadow: none;
+}
+
+.control-center-clear-all {
+  color: white;
+  text-shadow: none;
+  background: @bg;
+  border: 1px solid @border-color;
+  box-shadow: none;
+  /*border-radius: 10px;*/
+}
+.control-center-clear-all:hover {
+  background: @bg-hover;
+}
+
+.control-center-dnd {
+  /*border-radius: 10px;*/
+  background: @bg;
+  border: 1px solid @border-color2;
+  box-shadow: none;
+}
+
+.control-center-dnd:checked {
+  background: @border-color2;
+}
+.control-center-dnd slider {
+  background: @bg-hover;
+}
+
+.control-center {
+  background: @bg;
+  /*border-radius: 5px;*/
+  border: 1px solid @border-color;
+}
+.control-center-list {
+  background: transparent;
+  opacity: 0.7;
+  border-top: 1px solid @bg-hover;
+}
+
+.floating-notifications {
+  background: transparent;
+}
+
+.widget-dnd > switch {
+   border: 1px solid @border-color2;
+}
+.widget-dnd > switch:checked {
+  background: @border-color2;
+}
+
+.widget-mpris-player {
+  background: @bg-hover;
+  border-radius: 0%;
+}
+.widget-menubar {
+  margin-top: 5px;
+}
+.widget-menubar > button {
+  border: none;
+}
+.widget-menubar > button:hover {
+  background-color: @border-color2;
+}
+.menu-button-bar {
+  border-top: none;
+}
+.menu-button-bar > button {
+  background: none;
+  margin-right: 10px;
+  border: 1px solid @border-color2;
+}
+.menu-button-bar > button:hover {
+  background: @border-color2;
+}
+.topbar-buttons > button {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  border: 1px solid @border-color2;
+}
+.topbar-buttons > button:hover {
+  background-color: @border-color2;
+}
