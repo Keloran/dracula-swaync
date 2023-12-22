@@ -209,3 +209,13 @@
 .topbar-buttons > button:hover {
   background-color: @border-color2;
 }
+
+.widget-mpris-player {
+  border: 1px solid @border-color2;
+  border-radius: 5px;
+}
+.widget-mpris-player > box > button {
+  border: 1px solid @border-color1;
+  border-radius: 5px;
+}
+
